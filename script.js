@@ -16,7 +16,6 @@ console.log(screen.availHeight);
 var container = document.querySelector('#gridContainer');
 container.setAttribute('style', `width: ${containerSize}px`);
 container.addEventListener('mouseover', hovered)
-container.addEventListener('touchleave', hovered)
 makePixels();
 
 function makePixels () { 
@@ -25,12 +24,18 @@ function makePixels () {
         pixel.setAttribute('style', `width: ${pixelSize}px; height: ${pixelSize}px`)
         pixel.id = i;
         pixel.classList.add('pixel');
+        pixel.addEventListener('touchleave', hovered)
         container.appendChild(pixel);
+        
     }
 }
 
 function hovered(e) {
     e.target.style.backgroundColor = "black";
+}
+
+function touched(e) {
+    e.style.backgroundColor = "black";
 }
 
 function reset () {
