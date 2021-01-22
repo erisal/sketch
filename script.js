@@ -16,6 +16,7 @@ console.log(screen.availHeight);
 var container = document.querySelector('#gridContainer');
 container.setAttribute('style', `width: ${containerSize}px`);
 container.addEventListener('mouseover', hovered)
+container.addEventListener('touchleave', hovered)
 makePixels();
 
 function makePixels () { 
