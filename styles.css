@@ -1,0 +1,44 @@
+#gridContainer {
+display: flex;    
+flex-wrap: wrap;
+background-color: aquamarine;
+position: relative;
+left: 0px;
+top: 0px;
+padding: 0px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+
+}
+
+.pixel {
+background-color:cadetblue;
+border: 1px solid rgb(92, 160, 161);
+margin: 0px;
+
+margin: 0px;
+}
+
+.pixel:hover{
+    background-color: black;
+}
+
+.button{
+    color:rgb(233, 202, 30);
+    background-color: darkcyan; 
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+    border: 2px solid darkcyan;
+    border-radius: 6px;
+    margin: auto;
+
+}
+.button:hover{
+    border: 2px solid black;
+}
+#head {
+    text-align: center;
+    padding: 6px;
+    margin: 0px;
+}
