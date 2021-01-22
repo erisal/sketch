@@ -24,8 +24,9 @@ function makePixels () {
         pixel.setAttribute('style', `width: ${pixelSize}px; height: ${pixelSize}px`)
         pixel.id = i;
         pixel.classList.add('pixel');
-        pixel.addEventListener('pointerdown', hovered)
-        pixel.addEventListener('pointermove', hovered)
+        pixel.addEventListener('touchstart', hovered);
+        pixel.addEventListener('touchmove', hovered);
+        pixel.addEventListener('touchend', hovered);
         container.appendChild(pixel);
         
     }
