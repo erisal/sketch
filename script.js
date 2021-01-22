@@ -24,7 +24,7 @@ function makePixels () {
         pixel.setAttribute('style', `width: ${pixelSize}px; height: ${pixelSize}px`)
         pixel.id = i;
         pixel.classList.add('pixel');
-        pixel.addEventListener('touchleave', hovered)
+        pixel.addEventListener('touchmove', hovered)
         container.appendChild(pixel);
         
     }
