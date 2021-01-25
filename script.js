@@ -1,4 +1,4 @@
-var pixelCount = 64;
+var pixelCount = 48;
 var minPxl = 10;
 var maxPxl = 100;
 var gridCount = pixelCount * pixelCount;
@@ -24,9 +24,9 @@ function makePixels () {
         pixel.setAttribute('style', `width: ${pixelSize}px; height: ${pixelSize}px`)
         pixel.id = i;
         pixel.classList.add('pixel');
-        pixel.addEventListener('touchstart', hovered);
-        pixel.addEventListener('touchmove', hovered);
-        pixel.addEventListener('touchend', hovered);
+        // pixel.addEventListener('touchstart', hovered);
+        // pixel.addEventListener('touchmove', hovered);
+        // pixel.addEventListener('touchend', hovered);
         container.appendChild(pixel);
         
     }

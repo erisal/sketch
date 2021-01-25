@@ -1,7 +1,13 @@
+
+body{
+    background: rgb(1, 42, 80);
+}
+
 #gridContainer {
 display: flex;    
 flex-wrap: wrap;
-background-color: aquamarine;
+background:  white;
+background-color: cadetblue;
 position: relative;
 left: 0px;
 top: 0px;
@@ -9,33 +15,32 @@ padding: 0px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 0px;
-
 }
 
 .pixel {
-background-color:cadetblue;
-border: 1px solid rgb(92, 160, 161);
+background-color:rgb(95, 125, 160);
+border: 1px solid rgb(92, 130, 161);
 margin: 0px;
 
 margin: 0px;
 }
 
 .pixel:hover{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .button{
     color:rgb(233, 202, 30);
-    background-color: darkcyan; 
+    background-color: rgb(17, 28, 85); 
     font-size: 24px;
     font-family: 'Unica One', cursive;
-    border: 2px solid darkcyan;
+    border: 2px solid cadetblue;
     border-radius: 6px;
     margin: auto;
 
 }
 .button:hover{
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
 }
 #head {
     text-align: center;
